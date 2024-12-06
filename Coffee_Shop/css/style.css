@@ -1,0 +1,542 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #000;
+        padding: 2px;
+    }
+
+    .conatiner {
+        background-color: #CE9461;
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: orange;
+        padding: 15px;
+
+    }
+
+    .banner .title {
+        width: 50%;
+        height: 515px;
+        /* background-color: orange;
+        border-radius: 5px; */
+    }
+
+    .title .menu {
+        width: 98%;
+        display: flex;
+        /* flex-direction: row; */
+        padding: 5px 0;
+        justify-content: center;
+        /* background-color: #3b3019; */
+        background-color: #313130;
+        border-radius: 15px;
+        flex-wrap: wrap;
+
+    }
+
+    .title .menu .profile {
+        width: 12%;
+        height: auto;
+        /* background-color: red; */
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .title .menu .profile img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .title .menu ul {
+        width: 85%;
+        list-style-type: none;
+        margin: 0;
+        padding: 2px;
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .title .menu ul li {
+        margin-left: 40px;
+        font-size: 24px;
+    }
+
+    .title .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .title .menu ul li a:hover {
+        color: orange;
+        /* color: #007bff; */
+        /* Change link color on hover */
+    }
+
+
+    .title .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        /* background-color: rgb(28, 209, 127); */
+    }
+
+    .title .info h1 {
+        font-size: 34px;
+        margin-bottom: -5px;
+    }
+
+    .title .info p {
+        font-size: 30px;
+        margin-top: -10px;
+
+    }
+
+    .title .info hr {
+        width: 370px;
+        margin-bottom: 20px;
+        border: none;
+        border: 1px solid #fff;
+    }
+
+    .title .info ul {
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    .title .info ul li {
+        margin-bottom: 8px;
+        font-size: 25px;
+        text-align: start;
+    }
+
+    /* card */
+    .card {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card .card1 {
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card1 .cardA {
+        width: 60%;
+        height: 250px;
+        background-color: #4f1b1b;
+        margin-right: 15px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .card1 .cardA img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card1 .cardB {
+        width: 40%;
+        height: 250px;
+        background-color: green;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .card1 .cardB img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .card2  */
+    .card2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .card2 .cardC {
+        margin-top: 15px;
+        width: 100%;
+        height: 250px;
+        background-color: green;
+        overflow: hidden;
+        border-radius: 10px;
+        display: flex;
+    }
+
+    .card2 .cardC .image {
+        width: 100%;
+        max-width: 830px;
+        height: auto;
+        background-color: red;
+        overflow: hidden;
+    }
+
+    .card2 .cardC .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.9s ease;
+    }
+
+    .image:hover img {
+        transform: scale(1.05);
+    }
+
+    /* SMALL CARD */
+    .small-cards {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card_card {
+        width: 30%;
+        height: 350px;
+        max-width: 280px;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #fff;
+        /* box-shadow: 5px 3px 10px lightblue; */
+        box-shadow: 5px 3px 10px #826F66;
+    }
+
+    .card_card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.9s ease;
+    }
+
+    .card_card:hover img {
+        transform: scale(1.05);
+    }
+
+    .card_card .tille {
+        width: 100%;
+        height: 100px;
+        padding: 10px 16px;
+    }
+
+    /* detail_coffee */
+    .detail_coffee {
+        width: 100%;
+        height: 330px;
+        /* background-color: #caf3f8; */
+        background-color: #e3f5f8;
+        padding: 25px;
+        margin-top: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 7px 7px 15px rgb(71, 71, 69);
+
+    }
+
+    .detail_coffee .card_a {
+        width: 50%;
+        height: 100%;
+        border-radius: 5px;
+        /* border-right: 2px solid #fff; */
+        /* background-color: rgb(187, 185, 185); */
+        overflow: hidden;
+        display: flex;
+    }
+
+    .card_a img {
+        width: 50%;
+        object-fit: cover;
+        display: block;
+        border-radius: 5px;
+        transition: transform 0.6s ease;
+
+    }
+
+    .card_a:hover img {
+
+        transform: scale(1.05);
+
+    }
+
+    .card_a .text {
+        width: 50%;
+        height: 100%;
+        overflow: scroll;
+        text-align: start;
+        padding: 25px;
+        border-right: 2px solid grey;
+    }
+
+    /* card_b */
+    .detail_coffee .card_b {
+        width: 50%;
+        height: 100%;
+        padding-left: 5px;
+
+        /* background-color: green; */
+    }
+
+    .card_b .card1 {
+        width: 100%;
+        height: 50%;
+        /* background-color: #ad5e26; */
+        overflow: hidden;
+        display: flex;
+        padding-bottom: 5px;
+        border-bottom: 2px solid grey;
+    }
+
+    .card_b .card1 img {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+        /* background-color: red; */
+    }
+
+    .card_b .card1:hover img {
+        transform: scale(1.05);
+    }
+
+    .card_b .card1 .text {
+        width: 60%;
+        height: 100%;
+        overflow: scroll;
+        padding: 20px;
+    }
+
+
+
+    .card_b .card2 {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        display: flex;
+        padding-top: 5px;
+    }
+
+    .card_b .card2 img {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 5px;
+        /* background-color: red; */
+        transition: transform 0.3s ease;
+    }
+
+    .card_b .card2:hover img {
+        transform: scale(1.05);
+    }
+
+    .card_b .card2 .text {
+        width: 60%;
+        height: 100%;
+        overflow: scroll;
+        padding: 20px;
+    }
+
+
+    /* Our Coffee */
+    .our_coffee {
+        width: 100%;
+        height: auto;
+        /* background-color: red; */
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+
+    }
+
+    .our_coffee .cart_item {
+        width: 19%;
+        height: 170px;
+        padding: 5PX;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px #000;
+        border: 1px solid grey;
+        transition: background-color 0.9s ease;
+    }
+
+    .cart_item:hover {
+        color: #fff;
+        border-bottom: 2px solid #000;
+        background-color: orange;
+        /* background-color: #deab7e; */
+    }
+
+    .cart_item .icon {
+        width: 100%;
+        height: 42%;
+        /* background-color: yellow; */
+        text-align: center;
+        /* color: #000; */
+        font-size: 30px;
+        padding-top: 10px;
+        border-bottom: 2px solid #fff;
+        transition: color 0.2s ease;
+
+    }
+
+    .cart_item .text {
+        width: 100%;
+        height: 58%;
+        padding: 5px;
+        overflow: scroll;
+
+    }
+
+    .cart_item .text h5 {
+        margin-bottom: 5px;
+    }
+
+
+    /* Taste Coffee */
+
+    .taste_coffee {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-top: 55px;
+        color: #000;
+        border-radius: 5px;
+        background-color: orange;
+    }
+
+    .taste_coffee h1 {
+        text-align: center;
+        transition: color 0.3s ease;
+    }
+
+    .taste_coffee h1:hover {
+        color: #fff;
+    }
+
+    .taste_coffee_title h3 {
+        color: #fff;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .taste_coffee_title p {
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+
+
+    /* Footer */
+    .footer {
+        width: 100%;
+        height: auto;
+        margin-top: 55px;
+        padding: 15px;
+        background-color: #fff;
+        /* border: 5px solid orange; */
+        border-radius: 5px;
+    }
+
+    .footer .logo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 20px;
+        /* background-color: green; */
+    }
+
+    .footer .logo .image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        /* background-color: rgb(226, 14, 14); */
+    }
+
+    .footer .logo .image img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .footer .name {
+        padding: 20px;
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .footer .more_detail {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 0px;
+        flex-direction: row;
+        /* background-color: blue; */
+        flex-wrap: wrap;
+    }
+
+    .footer .more_detail .card {
+        width: 20%;
+        height: 200px;
+        padding: 0 40px;
+        border-right: 1px solid #000;
+        color: #4f1b1b;
+        transition: color 0.3s ease;
+        /* background-color: grey; */
+    }
+
+    .footer .more_detail .card h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer .more_detail .card p,
+    li {
+        font-size: 20px;
+        margin-top: 5px;
+    }
